@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_grey">#2a3136</color>
+    <color name="grey">#dcdcdc</color>
+    <color name="medium_grey">#878686</color>
+    <color name="light_blue">#92B2F1</color>
+    <color name="very_light_blue">#B6CCF7</color>
+    <color name="yellow">#FFC56F</color>
+    <color name="red">#F6A99B</color>
+    <color name="splash">#303030</color>
+    <color name="green">#BBD3A6</color>
+    <color name="blue_cardview">#D8E3F8</color>
+
+
+
+</resources>

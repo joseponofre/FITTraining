@@ -1,0 +1,60 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.FITTraining" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/grey</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <!-- Style para los textos -->
+    <style name="texto">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Style para los ejercicios en activity entrenamiento -->
+    <style name="ejercicios">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- Style para los textos de los nombres de las comidas -->
+    <style name="texto_comidas">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- Style para los textos del navigation bar -->
+    <style name="txt_navigation_bar">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+    <!-- Color para la Navigaton Bar (blanco en modo día, gris oscuro en modo noche)-->
+    <style name="navigation_bar">
+        <item name="android:backgroundTint">@color/dark_grey</item>
+    </style>
+
+
+    <!-- Style para el splashscreen -->
+</resources>

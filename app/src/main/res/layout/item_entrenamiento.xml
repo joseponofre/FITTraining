@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="325dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="5dp"
+    android:backgroundTint="@color/blue_cardview"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    app:strokeColor="@color/medium_grey"
+    app:strokeWidth="3dp">
+
+    <!-- ITEM  que carga el recyclerview de la activity Historial con los entrenamientos guardados-->
+
+    <!-- LinearLayout principal que contiene el resto de linearlaouts-->
+    <LinearLayout
+        android:id="@+id/ll_principal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- LinearLayout que contiene la fecha y la hora-->
+        <LinearLayout
+            android:id="@+id/ll_fecha_hora"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <!-- TextView con la fecha-->
+            <TextView
+                android:id="@+id/tv_fecha"
+                style="@style/cardview_entrenamientos"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="30dp"
+                android:text="@string/date"
+                tools:ignore="RtlSymmetry">
+
+            </TextView>
+            <!-- TextView con la hora-->
+            <TextView
+                android:id="@+id/tv_hora"
+                style="@style/cardview_entrenamientos"
+                android:layout_width="145dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="30dp"
+                android:text="@string/time"
+                tools:ignore="RtlSymmetry">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <!-- LinearLayout con el resto de datos-->
+        <LinearLayout
+            android:id="@+id/ll_resto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <!-- TextView con el número de ejercicios-->
+            <TextView
+                android:id="@+id/tv_num_ejercicios"
+                style="@style/cardview_entrenamientos"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/exercises"
+                tools:ignore="RtlSymmetry" />
+            <!-- TextView con el total de calorías-->
+            <TextView
+                android:id="@+id/tv_kcal"
+                style="@style/cardview_entrenamientos"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:text="@string/calories"
+                tools:ignore="RtlSymmetry" />
+
+            <!-- TextView con la duración del entrenamiento-->
+            <TextView
+                android:id="@+id/tv_duracion"
+                style="@style/cardview_entrenamientos"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/duration_workout"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="1dp">
+
+    <!-- ITEM (o layout) que utilizaré para cargar el recyclerview de la activity Comidas-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:id="@+id/tv_nombre_comida"
+            style="@style/texto_comidas"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/iv_comida"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Arroz con pollo en salsa de soja, brócoli y semillas de sésamo" />
+
+        <ImageView
+            android:id="@+id/iv_comida"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/meals"
+            android:scaleType="centerCrop"
+            android:src="@drawable/comida_arroz_pollo_brocoli_sesamo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_nombre_comida" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">FITTraining</string>
+    <string name="exercises">Ejercicios</string>
+    <string name="meals">Comidas</string>
+    <string name="history">Historial</string>
+    <string name="training">Entrenar</string>
+    <string name="profile">Perfil</string>
+    <string name="instructions">Instrucciones</string>
+    <string name="text_instructions">"Aquí pondré las instrucciones de los ejercicios."</string>
+    <string name="back">Atrás</string>
+    <string name="exercise_name">Nombre del ejercicio</string>
+    <string name="duration">Duración total</string>
+    <string name="are_you_ready">¿Estás preparad@ para sudar?</string>
+    <string name="start">Comenzar</string>
+    <string name="exercise_duration">Duración ejercicios</string>
+    <string name="rest_duration">Duración descansos</string>
+    <string name="pause">Pausar</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancelar</string>
+    <string name="resume">Reanudar</string>
+    <string name="congrats">¡¡ Enhorabuena !! Has completado un nuevo entrenamiento</string>
+    <string name="date">Fecha</string>
+    <string name="time">Hora</string>
+    <string name="duration_workout">Duración</string>
+    <string name="calories">Calorías (kcal)</string>
+    <string name="workout_details">DATOS ENTRENAMIENTO:</string>
+    <string name="breakfast">Desayunos</string>
+    <string name="lunch">Comidas</string>
+    <string name="dinner">Cenas</string>
+    <string name="day">Día: %s</string>
+    <string name="hour">Hora: %s</string>
+    <string name="minutes">Minutos: %s</string>
+    <string name="kcal">Calorías (kcal): %s</string>
+    <string name="carbs">carbohidratos</string>
+    <string name="protein">proteína</string>
+    <string name="fat">grasas</string>
+    <string name="exercises_">Ejercicios: %s</string>
+    <string name="_00">00</string>
+    <string name="_0_minutos">0 minutos</string>
+    <string name="_0_segundos">0 segundos</string>
+    <string name="rest">Descansa</string>
+    <string name="ingredients">Ingredientes</string>
+    <string name="text_ingredients">Ingredientes del plato</string>
+    <string name="log_in">Iniciar sesión</string>
+    <string name="write_password">Introduzca la contraseña</string>
+    <string name="new_user">Nuevo usuario</string>
+    <string name="write_username">Introduzca un nombre de usuario</string>
+    <string name="repeat_password">Repita la contraseña</string>
+    <string name="create_user">Crear usuario</string>
+    <string name="username">Nombre usuario</string>
+    <string name="log_out">Cerrar sesión</string>
+    <string name="delete_account">Borrar cuenta</string>
+
+
+</resources>

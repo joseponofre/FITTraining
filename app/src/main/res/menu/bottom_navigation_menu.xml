@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_comidas"
+        android:icon="@drawable/act_comidas"
+        android:title="@string/meals" />
+    <item
+        android:id="@+id/nav_historial"
+        android:icon="@drawable/act_historial"
+        android:title="@string/history" />
+    <item
+        android:id="@+id/nav_entrenar"
+        android:icon="@drawable/act_entrenar"
+        android:title="@string/training" />
+    <item
+        android:id="@+id/nav_ejercicios"
+        android:icon="@drawable/act_ejercicios"
+        android:title="@string/exercises" />
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/act_perfil"
+        android:title="@string/profile" />
+</menu>

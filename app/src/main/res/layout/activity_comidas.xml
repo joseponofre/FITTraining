@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Comidas"
+    tools:ignore="VisualLintBottomAppBar">
+
+    <!-- Toolbar  Comidas-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_comidas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="125dp"
+        app:title="@string/meals"
+        app:titleTextAppearance="@style/toolbar"
+        app:titleTextColor="@color/medium_grey"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_comidas">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_desayunos"
+                style="@style/comidas"
+                android:text="@string/breakfast"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.001"
+                tools:ignore="MissingConstraints,TextContrastCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_desayunos"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginVertical="1dp"
+                android:scrollbars="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_desayunos"
+                app:layout_constraintVertical_bias="0.001" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_comidas"
+                style="@style/comidas"
+                android:text="@string/lunch"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_desayunos"
+                app:layout_constraintVertical_bias="0.001"
+                tools:ignore="MissingConstraints,TextContrastCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_comidas"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginVertical="1dp"
+                android:scrollbars="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_comidas"
+                app:layout_constraintVertical_bias="0.001" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_cenas"
+                style="@style/comidas"
+                android:text="@string/dinner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_comidas"
+                app:layout_constraintVertical_bias="0.001"
+                tools:ignore="MissingConstraints,TextContrastCheck" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cenas"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginVertical="1dp"
+                android:scrollbars="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_cenas"
+                app:layout_constraintVertical_bias="0.001" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

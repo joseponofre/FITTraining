@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Entrenamiento">
+
+    <!-- Video con el ejercicio-->
+    <VideoView
+        android:id="@+id/vv_entrenamiento"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="25dp"
+        android:contentDescription="@string/exercises"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033"
+        tools:srcCompat="@drawable/i_air_bike"
+        android:visibility="visible"
+        />
+
+    <!-- TextView con el nombre del ejercicio-->
+    <TextView
+        android:id="@+id/tv_entrenamiento_nombre_ejercicio"
+        style="@style/workout_ejercicios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/exercise_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vv_entrenamiento" />
+
+    <!-- TextView que muestra lo que queda para terminar el ejercicio o descanso-->
+    <TextView
+        android:id="@+id/tv_timer"
+        style="@style/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_entrenamiento_nombre_ejercicio"
+        app:layout_constraintVertical_bias="0.20" />
+
+    <!-- ProgressBar circular -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/progress_bar"
+        app:layout_constraintBottom_toBottomOf="@id/tv_timer"
+        app:layout_constraintEnd_toEndOf="@id/tv_timer"
+        app:layout_constraintStart_toStartOf="@id/tv_timer"
+        app:layout_constraintTop_toTopOf="@id/tv_timer" />
+
+    <!-- Botón de Pausar-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_pausar"
+        style="@style/button_workout"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/pause"
+        android:textAllCaps="false"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bt_reset"
+        app:layout_constraintStart_toEndOf="@id/bt_reanudar"
+        app:layout_constraintTop_toBottomOf="@id/tv_timer"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <!-- Botón de Reanudar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_reanudar"
+        style="@style/button_workout"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/very_light_blue"
+        android:text="@string/resume"
+        android:textAllCaps="false"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bt_pausar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_timer"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <!-- Botón de Reset -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_reset"
+        style="@style/button_workout"
+        android:layout_width="115dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/reset"
+        android:textAllCaps="false"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_pausar"
+        app:layout_constraintTop_toBottomOf="@id/tv_timer"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <!-- Botón de Cancelar-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_cancelar"
+        style="@style/button_workout"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_pausar"
+        app:layout_constraintVertical_bias="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,197 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="Theme.FITTraining" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/grey</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <!-- Style para los textos -->
+    <style name="texto">
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style para los ejercicios en activity entrenamiento -->
+    <style name="ejercicios">
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="duracion">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/very_light_blue</item>
+    </style>
+
+    <style name="duracion_elegida">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="backgroundTint">@color/very_light_blue</item>
+
+    </style>
+
+
+    <!-- Style para los textos del navigation bar -->
+
+    <style name="estas_preparado">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+
+    <style name="timer">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">70sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="button_workout">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="button_ejercicios">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">15sp</item>
+        <item name="backgroundTint">@color/very_light_blue</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Style para los ejercicios en activity entrenamiento -->
+    <style name="workout_ejercicios">
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style para los ejercicios en activity entrenamiento -->
+    <style name="enhorabuena">
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style para TOOLBAR - NOMBRE DE LA ACTIVITY -->
+    <style name="toolbar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="paddingStart">125dp</item>
+    </style>
+
+    <!-- Style para los textos -->
+    <style name="cardview_entrenamientos">
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style para los textos -->
+    <style name="datos_entrenamientos">
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    !-- Style para los textviews de la activity Comidas-->
+
+    <style name="comidas">
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:background">@color/blue_cardview</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingVertical">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <!-- Style para los textos de los nombres de las comidas -->
+    <style name="texto_comidas">
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style para los valores nutricionales en activity ingredientes-->
+    <style name="valores">
+        <item name="android:textColor">@color/medium_grey</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="button_nuevo_usuario">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">15sp</item>
+        <item name="backgroundTint">@color/very_light_blue</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <!-- Color para la Navigaton Bar (blanco en modo día, gris oscuro en modo noche)-->
+
+
+    <!-- Style para el nombre de la app FITTraining en la SplashScreen-->
+
+    <!-- Style para el splashscreen -->
+    <style name="Theme.App.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_app</item>
+        <item name="windowSplashScreenAnimationDuration">500</item>
+        <item name="postSplashScreenTheme">@style/Theme.FITTraining</item>
+    </style>
+
+
+
+
+</resources>

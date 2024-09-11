@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ingredientes">
+
+    <!-- Toolbar Ingredientes-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ingredientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/iv_atras_ingr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/back"
+            android:src="@drawable/volver_atras" />
+
+        <TextView
+            style="@style/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp"
+            android:text="@string/ingredients"
+            android:textColor="@color/medium_grey"
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- TextView con el tipo de comida (desayuno, comida, cena) -->
+    <TextView
+        android:id="@+id/tv_tipo_comida"
+        style="@style/ejercicios"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:background="@color/blue_cardview"
+        android:gravity="center"
+        android:text="@string/breakfast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_ingredientes"
+        app:layout_constraintVertical_bias="0.005" />
+
+
+    <!-- Imagen con el plato-->
+    <ImageView
+        android:id="@+id/img_comida"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginHorizontal="12dp"
+        android:contentDescription="@string/meals"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tipo_comida"
+        app:layout_constraintVertical_bias="0.02"
+        android:layout_marginTop="10dp"
+        tools:srcCompat="@drawable/desayuno_tortilla_francesa_cherrys_tostadas_guacamole" />
+
+    <!-- TextView con el nombre del plato -->
+    <TextView
+        android:id="@+id/tv_nombre_plato"
+        style="@style/ejercicios"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/blue_cardview"
+        android:gravity="center"
+        android:text="@string/meals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_comida"
+        />
+
+    <!-- LinearLayout con los valores nutricionales (kcal,carbohidratos, proteínas, grasas) -->
+
+    <LinearLayout
+        android:id="@+id/ll_ingredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nombre_plato"
+        app:layout_constraintBottom_toTopOf="@id/tv_ingredientes"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="15dp">
+
+        <!-- TextView kcal-->
+        <TextView
+            android:id="@+id/tv_kcal"
+            style="@style/valores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kcal"
+            android:layout_margin="3dp"
+            />
+
+        <!-- Divider tras kcal-->
+        <View
+            android:layout_width="4dp"
+            android:layout_height="15dp"
+            android:background="@color/medium_grey"
+            android:layout_margin="3dp"
+            />
+
+        <!-- TextView carbohidratos-->
+
+        <TextView
+            android:id="@+id/tv_carbs"
+            style="@style/valores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carbs"
+            android:layout_margin="3dp"
+            />
+
+        <!-- Divider tras carbs-->
+        <View
+            android:layout_width="4dp"
+            android:layout_height="15dp"
+            android:background="@color/medium_grey"
+            android:layout_margin="3dp"
+            />
+
+        <!-- TextView proteínas-->
+        <TextView
+            android:id="@+id/tv_prote"
+            style="@style/valores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/protein"
+            android:layout_margin="3dp"
+            />
+
+        <!-- Divider tras proteínas-->
+        <View
+            android:layout_width="4dp"
+            android:layout_height="15dp"
+            android:background="@color/medium_grey"
+            android:layout_margin="3dp"
+            />
+
+        <!-- TextView grasas -->
+        <TextView
+            android:id="@+id/tv_grasas"
+            style="@style/valores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fat"
+            android:layout_margin="3dp"
+            />
+
+
+    </LinearLayout>
+
+    <!-- TextView con los ingredientes del plato-->
+    <TextView
+        android:id="@+id/tv_ingredientes"
+        style="@style/texto"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_margin="12dp"
+        android:text="@string/text_ingredients"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_ingredientes"
+        android:paddingTop="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

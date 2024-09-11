@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Entrenar">
+
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_entrenar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="125dp"
+        app:title="@string/training"
+        app:titleTextAppearance="@style/toolbar"
+        app:titleTextColor="@color/medium_grey"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <!-- Cardview duración total del entrenamiento-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_duracion_total"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/very_light_blue"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_entrenar"
+        app:layout_constraintVertical_bias="0.15">
+
+        <!-- LinearLayout duración total-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <!-- TextView duración  total -->
+            <TextView
+                style="@style/duracion"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/duration" />
+
+            <!-- TextView duración elegida total -->
+            <TextView
+                android:id="@+id/tv_elegir_duracion_total"
+                style="@style/duracion_elegida"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/_0_minutos"
+                android:paddingStart="40dp"
+                tools:ignore="RtlSymmetry" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Cardview duración ejercicios-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_duracion_ejercicios"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/very_light_blue"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_entrenar"
+        app:layout_constraintVertical_bias="0.30">
+
+        <!-- LinearLayout duración ejercicios-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <!-- TextView duración ejercicios -->
+            <TextView
+                style="@style/duracion"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/exercise_duration" />
+
+            <!-- TextView duración elegida ejercicios -->
+            <TextView
+                android:id="@+id/tv_elegir_duracion_ejercicios"
+                style="@style/duracion_elegida"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:padding="5dp"
+                android:hint="@string/_0_segundos" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Cardview duración descanso -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_duracion_descanso"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/very_light_blue"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_entrenar"
+        app:layout_constraintVertical_bias="0.45">
+
+        <!-- LinearLayout duración descanso-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <!-- TextView duración  descanso-->
+            <TextView
+                style="@style/duracion"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/rest_duration" />
+
+            <!-- TextView duración  descanso elegida-->
+            <TextView
+                android:id="@+id/tv_elegir_duracion_descanso"
+                style="@style/duracion_elegida"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:hint="@string/_0_segundos" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- TextView "¿estas preparado?"-->
+
+    <TextView
+        style="@style/estas_preparado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/are_you_ready"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_entrenar"
+        app:layout_constraintVertical_bias="0.60" />
+
+    <!-- Button "Comenzar" -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_comenzar"
+        style="@style/button_ejercicios"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_entrenar"
+        app:layout_constraintVertical_bias="0.78" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
